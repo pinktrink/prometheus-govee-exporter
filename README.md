@@ -4,7 +4,7 @@ This is a simple tool for exporting temperature, humidity, and battery levels
 from compatible [Govee](https://us.govee.com/) sensors to
 [Prometheus](https://prometheus.io/) or compatible services.
 
-It can be run standalone or in Docker.
+It can be run standalone or in Docker (recommended).
 
 
 ## Compatible Devices
@@ -51,8 +51,9 @@ There are additional command line flags for changing the polling interval, log l
 
 # Docker Installation
 
-This is available on Docker as `chipx86/prometheus-govee-exporter`. You'll need
-to run this in privileged mode and mount `/var/run/dbus/:/var/run/dbus/`.
+This is available on Docker as [chipx86/prometheus-govee-exporter](https://hub.docker.com/r/chipx86/prometheus-govee-exporter).
+You'll need to run this in privileged mode and mount
+`/var/run/dbus/:/var/run/dbus/`.
 
 Here's a sample `docker-compose.yaml` configuration linking the exporter,
 Prometheus, and Grafana together:
