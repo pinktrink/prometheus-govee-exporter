@@ -1,0 +1,49 @@
+[project]
+name = 'prometheus-govee-exporter'
+description = 'Exports Govee temperature sensor data to Prometheus.'
+version = '1.0'
+
+license = {text = 'MIT'}
+authors = [
+    {name = 'Christian Hammond', email = 'chipx86@chipx86.com'},
+]
+
+requires-python = '>=3.8'
+
+dependencies = [
+    'bleak~=0.15.1',
+    'prometheus-client~=0.14.1',
+]
+
+keywords = [
+    'govee',
+    'temperature',
+    'prometheus',
+    'data',
+    'monitoring',
+]
+
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Environment :: No Input/Output (Daemon)',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Topic :: System',
+    'Topic :: System :: Monitoring',
+]
+
+
+[project.urls]
+homepage = 'https://github.com/chipx86/prometheus-govee-exporter'
+repository = 'https://github.com/chipx86/prometheus-govee-exporter'
+
+
+[project.scripts]
+prometheus-govee-exporter = 'prometheus_govee_exporter.main:main'
