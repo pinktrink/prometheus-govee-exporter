@@ -11,8 +11,8 @@ authors = [
 requires-python = '>=3.8'
 
 dependencies = [
-    'bleak~=0.15.1',
-    'prometheus-client~=0.14.1',
+    'bleak~=0.22.3',
+    'prometheus-client~=0.21.0',
 ]
 
 keywords = [
